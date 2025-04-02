@@ -48,6 +48,8 @@ Elle inclut des fonctionnalités d'authentification, de gestion des utilisateurs
   npm run dev
 ```
 ---
+### NB
+Lancer la route /logout à l'initialisation car mon cookie ne semble pas rénitialisé au premier lencement du projet et la route POST potions/ est accessible alors qu'elle ne devrait pas. Par contre lorsque l'on lance une requete sur /logout et que l'on retente d'accéder aux autres routes, on reçoit bien "Token invalide" et il faut se reconnecter. Je ne saurais pas expliquer pourquoi.
 
 ## Documentation API
 
@@ -56,10 +58,6 @@ La documentation Swagger est disponible une fois le serveur démarré à l'adres
 http://localhost:3000/api-docs
 ```
 ---
-
-### NB
-Lancer la route /logout à l'initialisation car mon cookie ne semble pas rénitialisé au premier lencement du projet et la route POST potions/ est accessible alors qu'elle ne devrait pas. Par contre lorsque l'on lance une requete sur /logout et que l'on retente d'accéder aux autres routes, on reçoit bien "Token invalide" et il faut se reconnecter. Je ne saurais pas expliquer pourquoi.
-
 ## Fonctionnalités principales
 
 - Authentification (inscription, connexion, déconnexion)
