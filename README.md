@@ -1,4 +1,4 @@
-# API Potions
+# API Potions - GIRARD Lucas ESGI M1
 
 Ce projet est une API pour gérer des potions, construite avec Node.js, Express et MongoDB.  
 Elle inclut des fonctionnalités d'authentification, de gestion des utilisateurs et des potions, ainsi que des analyses statistiques.
